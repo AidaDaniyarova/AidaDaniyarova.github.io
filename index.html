@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aida Daniyarova | Graduate Software Engineer</title>
+  <meta name="description" content="Portfolio and CV of Aida Daniyarova, a First-Class Computer Science graduate building Python backends, REST APIs and AI-powered applications in London.">
+  <meta property="og:title" content="Aida Daniyarova | Graduate Software Engineer">
+  <meta property="og:description" content="Python backend, REST APIs and AI-powered applications. Portfolio and CV.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b6e69'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='18' font-weight='700' text-anchor='middle' fill='white'%3EAD%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    try {
+      var saved = localStorage.getItem("theme");
+      if (saved === "dark" || saved === "light") {
+        document.documentElement.setAttribute("data-theme", saved);
+      }
+    } catch (e) {}
+  </script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top">Aida Daniyarova</a>
+    <nav class="nav" aria-label="Primary">
+      <ul>
+        <li><a href="#about">/about</a></li>
+        <li><a href="#projects">/projects</a></li>
+        <li><a href="#experience">/experience</a></li>
+        <li><a href="#skills">/skills</a></li>
+        <li><a href="#education">/education</a></li>
+        <li><a href="#contact">/contact</a></li>
+      </ul>
+      <button class="theme-btn" id="theme-toggle" type="button" aria-label="Switch between light and dark theme">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <circle cx="12" cy="12" r="9"></circle>
+          <path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"></path>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">London, UK</p>
+        <h1>Aida Daniyarova</h1>
+        <p class="role">Graduate Software Engineer</p>
+        <p class="lead">I build Python and Java backends, REST APIs and AI-powered products. First-Class BSc Computer Science graduate from De Montfort University, with a final year project that I designed, built and deployed on my own.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="Aida_Daniyarova_CV.pdf" download>Download CV (PDF)</a>
+          <a class="btn" href="https://github.com/AidaDaniyarova" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://linkedin.com/in/aida-dani" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+
+      <figure class="api-card">
+        <div class="api-bar"><span><b>GET</b> /aida</span><span>200 OK</span></div>
+<pre><code>{
+  <span class="k">"role"</span>: <span class="s">"Graduate Software Engineer"</span>,
+  <span class="k">"degree"</span>: <span class="s">"BSc Computer Science"</span>,
+  <span class="k">"grade"</span>: <span class="s">"First-Class Honours (92%)"</span>,
+  <span class="k">"focus"</span>: [
+    <span class="s">"Python backend"</span>,
+    <span class="s">"REST APIs"</span>,
+    <span class="s">"AI-powered apps"</span>
+  ],
+  <span class="k">"stack"</span>: [
+    <span class="s">"Django"</span>, <span class="s">"Spring Boot"</span>,
+    <span class="s">"PostgreSQL"</span>, <span class="s">"React"</span>
+  ],
+  <span class="k">"languages"</span>: [
+    <span class="s">"English"</span>, <span class="s">"Russian"</span>, <span class="s">"Kazakh"</span>
+  ]
+}</code></pre>
+      </figure>
+    </div>
+  </div>
+
+  <section id="about" class="about">
+    <div class="wrap">
+      <p class="route">GET /about</p>
+      <h2>About</h2>
+      <p>I graduated with First-Class Honours in Computer Science from De Montfort University with a 92% average, and received the Best Final Year Student Prize in Computer Science.</p>
+      <p>Through internships, professional work and personal projects I have gained hands-on experience in full-stack development, backend engineering, API design and AI-powered applications. I am curious, adaptable and collaborative, and I like turning a rough idea into a working, deployed product.</p>
+      <p>I want to contribute to meaningful products, keep growing as a software engineer and help build technology that has a positive impact on people's lives.</p>
+      <ul class="facts">
+        <li>Based in London</li>
+        <li>English C1 · Russian C2 · Kazakh native</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <p class="route">GET /projects</p>
+      <h2>Projects</h2>
+
+      <article class="project featured">
+        <span class="tag">Final year project</span>
+        <div>
+          <h3>AI Career Pathway Tracker and CV Builder</h3>
+        </div>
+        <ul>
+          <li>Architected, developed and deployed the whole AI-powered platform end to end as the sole developer.</li>
+          <li>Built 20+ REST API endpoints with JWT authentication.</li>
+          <li>Built an NLP pipeline that uses BERT semantic search and TF-IDF keyword extraction for CV analysis, ATS scoring and personalised recommendations.</li>
+          <li>Integrated Hugging Face models into the backend services and validated the workflows with API and end-to-end testing.</li>
+        </ul>
+        <ul class="chips" aria-label="Technologies">
+          <li>Django</li><li>React</li><li>PostgreSQL</li><li>JWT</li><li>BERT</li><li>Hugging Face</li>
+        </ul>
+      </article>
+
+      <div class="project-grid">
+        <article class="project">
+          <h3>VueChat</h3>
+          <p>A real-time messaging system with an event-driven WebSocket architecture. It supports asynchronous messaging, room management and presence tracking. Frontend and backend deploy independently.</p>
+          <ul class="chips" aria-label="Technologies">
+            <li>Vue 3</li><li>Pinia</li><li>Socket.IO</li><li>Express</li><li>Tailwind CSS</li>
+          </ul>
+        </article>
+
+        <article class="project">
+          <h3>User Management System</h3>
+          <p>Secure REST APIs with JWT authentication, role-based access control and a layered architecture. Validated with Postman and JUnit.</p>
+          <ul class="chips" aria-label="Technologies">
+            <li>Java</li><li>Spring Boot</li><li>PostgreSQL</li><li>JWT</li>
+          </ul>
+        </article>
+
+        <article class="project">
+          <h3>Student Course Hub</h3>
+          <p>A full-stack university portal with role-based access, input validation and XSS protection, and an interface that meets WCAG 2 accessibility standards.</p>
+          <ul class="chips" aria-label="Technologies">
+            <li>Deno</li><li>TypeScript</li><li>PostgreSQL</li><li>WCAG 2</li>
+          </ul>
+        </article>
+
+        <article class="project">
+          <h3>ITracker</h3>
+          <p>A deployed Django application that gives users personalised career roadmaps and tracks their progress.</p>
+          <ul class="chips" aria-label="Technologies">
+            <li>Django</li><li>PostgreSQL</li><li>Render</li>
+          </ul>
+        </article>
+      </div>
+
+      <p class="more"><a href="https://github.com/AidaDaniyarova" target="_blank" rel="noopener">See the code on GitHub</a></p>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="wrap">
+      <p class="route">GET /experience</p>
+      <h2>Experience</h2>
+
+      <article class="job">
+        <time>Feb 2025 – Present</time>
+        <div>
+          <h3>IT Specialist</h3>
+          <p class="company">LLP Orda Tau</p>
+          <ul>
+            <li>Automated digital certificate generation, signing and distribution, which raised operational efficiency by 25%.</li>
+            <li>Coordinated cross-department technical meetings with 10+ IT specialists, resolving 15+ technical issues per session.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="job">
+        <time>Aug 2025 – Sep 2025</time>
+        <div>
+          <h3>Junior Web Developer (Frontend)</h3>
+          <p class="company">JMart (Jusan Bank)</p>
+          <ul>
+            <li>Built reusable TypeScript and React components for a production fintech application.</li>
+            <li>Worked in an Agile team with Git workflows and code reviews, and integrated backend APIs into responsive, accessible interfaces.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="job">
+        <time>Jun 2024 – Jul 2024</time>
+        <div>
+          <h3>Java Backend Developer Intern</h3>
+          <p class="company">LLP UCO</p>
+          <ul>
+            <li>Developed backend services and REST APIs with Java, Spring Boot and PostgreSQL, including JWT authentication and role-based access control.</li>
+            <li>Optimised SQL queries and database schemas to improve performance.</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <p class="route">GET /skills</p>
+      <h2>Skills</h2>
+
+      <dl class="skills">
+        <div class="skill-row">
+          <dt>Languages</dt>
+          <dd><ul class="chips"><li>Python</li><li>Java</li><li>Scala</li><li>JavaScript</li><li>TypeScript</li><li>PHP</li><li>SQL</li></ul></dd>
+        </div>
+        <div class="skill-row">
+          <dt>Backend</dt>
+          <dd><ul class="chips"><li>Django</li><li>Django REST Framework</li><li>Spring Boot</li><li>Node.js</li><li>Express.js</li><li>REST APIs</li><li>JWT Authentication</li></ul></dd>
+        </div>
+        <div class="skill-row">
+          <dt>AI and ML</dt>
+          <dd><ul class="chips"><li>Hugging Face Transformers</li><li>BERT</li><li>NLP</li><li>Semantic Search</li><li>TF-IDF</li><li>Information Retrieval</li></ul></dd>
+        </div>
+        <div class="skill-row">
+          <dt>Databases</dt>
+          <dd><ul class="chips"><li>PostgreSQL</li><li>MySQL</li><li>Database Design</li><li>Query Optimisation</li><li>ORM</li></ul></dd>
+        </div>
+        <div class="skill-row">
+          <dt>Real-time</dt>
+          <dd><ul class="chips"><li>WebSockets</li><li>Socket.IO</li><li>Event-Driven Architecture</li><li>Client-Server Architecture</li></ul></dd>
+        </div>
+        <div class="skill-row">
+          <dt>Cloud and DevOps</dt>
+          <dd><ul class="chips"><li>AWS</li><li>Git</li><li>GitHub</li><li>CI/CD</li><li>Linux</li><li>Render</li></ul></dd>
+        </div>
+        <div class="skill-row">
+          <dt>Practices</dt>
+          <dd><ul class="chips"><li>Data Structures and Algorithms</li><li>OOP</li><li>Clean Code</li><li>SDLC</li><li>Agile/Scrum</li><li>Code Reviews</li><li>JUnit</li><li>Jest</li><li>Postman</li></ul></dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="wrap">
+      <p class="route">GET /education</p>
+      <h2>Education and certifications</h2>
+
+      <div class="edu-grid">
+        <div>
+          <h3>BSc (Hons) Computer Science, First-Class Honours (92%)</h3>
+          <p>De Montfort University, Leicester · Sep 2023 – Jul 2026</p>
+          <ul>
+            <li>Best Final Year Student Prize in Computer Science (2026)</li>
+            <li>Power of Minds Award (2025)</li>
+          </ul>
+          <p class="sub">Modules</p>
+          <ul class="chips">
+            <li>Data Structures and Algorithms</li>
+            <li>Operating Systems and Networks</li>
+            <li>Design Patterns</li>
+            <li>Database Design</li>
+            <li>Big Data and Machine Learning</li>
+            <li>Advanced Web Development</li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="sub">Certifications</p>
+          <ul>
+            <li>EPAM Front-End Development with AI Tools, 374 hours (2026)</li>
+            <li>AWS Academy Cloud Foundations (2025)</li>
+            <li>Palo Alto Networks Cybersecurity Foundation (2024)</li>
+            <li>Red Hat System Administration I (RH124)</li>
+          </ul>
+          <p class="sub">Activities</p>
+          <ul>
+            <li>MOST Business Intelligence hackathon (2023)</li>
+            <li>Almaty Innovation Hackathon</li>
+            <li>Johns Hopkins CTY participant (2022)</li>
+            <li>Volunteer English teacher, Alpha Academy (2022)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <p class="route">POST /contact</p>
+      <h2>Get in touch</h2>
+      <p class="big"><a href="mailto:aida.daniyarova5@gmail.com">aida.daniyarova5@gmail.com</a></p>
+      <div class="actions">
+        <a class="btn btn-primary" href="Aida_Daniyarova_CV.pdf" download>Download CV (PDF)</a>
+        <a class="btn" href="https://github.com/AidaDaniyarova" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://linkedin.com/in/aida-dani" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Aida Daniyarova</span>
+    <span>London, UK</span>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var root = document.documentElement;
+    var btn = document.getElementById("theme-toggle");
+
+    function isDark() {
+      var t = root.getAttribute("data-theme");
+      if (t === "dark") return true;
+      if (t === "light") return false;
+      return window.matchMedia("(prefers-color-scheme: dark)").matches;
+    }
+
+    btn.addEventListener("click", function () {
+      var next = isDark() ? "light" : "dark";
+      root.setAttribute("data-theme", next);
+      try { localStorage.setItem("theme", next); } catch (e) {}
+    });
+
+    var y = document.getElementById("year");
+    if (y) y.textContent = new Date().getFullYear();
+  })();
+</script>
+</body>
+</html>
